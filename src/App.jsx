@@ -24,8 +24,7 @@ const MESSAGES = [
   '',
   'Spring is coming~',
   'Growing stronger...',
-  'Almost there...',
-  "Beautiful, isn't it?"
+  'Almost there...'
 ]
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
