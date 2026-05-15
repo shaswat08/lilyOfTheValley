@@ -198,9 +198,6 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <h1 className="title">Lily of the Valley</h1>
-        <p className="subtitle">A little patience goes a long way</p>
-
         <div className="plant-stage">
           <div className="watering-character-slot">
             <WateringCharacter frameIndex={spriteFrame} />
