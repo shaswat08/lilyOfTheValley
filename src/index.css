@@ -75,7 +75,6 @@ body {
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .watering-character-slot {
@@ -328,10 +327,17 @@ body {
   .plant-stage {
     justify-content: center;
   }
-  .gatto-character-slot,
+  .watering-character-slot {
+    flex: 0 0 25%;
+    min-width: 60px;
+  }
   .plant-container {
-    flex: 0 0 45%;
-    min-width: 120px;
+    flex: 0 0 50%;
+    min-width: 140px;
+  }
+  .gatto-character-slot {
+    flex: 0 0 25%;
+    min-width: 60px;
   }
   .gatto-character__img {
     max-height: 160px;
