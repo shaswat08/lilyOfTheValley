@@ -75,6 +75,7 @@ body {
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .watering-character-slot {
@@ -99,11 +100,12 @@ body {
 }
 
 .gatto-character-slot {
-  flex: 0 0 auto;
+  flex: 0 0 35%;
+  max-width: 172px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 172px;
+  min-width: 100px;
   height: 420px;
   margin-left: -10px;
   pointer-events: none;
@@ -116,8 +118,9 @@ body {
 
 .gatto-character__img {
   display: block;
-  width: 168px;
+  width: 100%;
   height: auto;
+  max-width: 168px;
   max-height: 220px;
   object-fit: contain;
   object-position: bottom center;
@@ -125,7 +128,9 @@ body {
 }
 
 .plant-container {
-  width: 320px;
+  flex: 0 0 55%;
+  max-width: 320px;
+  min-width: 160px;
   height: 420px;
   position: relative;
   display: flex;
@@ -317,4 +322,24 @@ body {
 
 @keyframes fadeInMessage {
   to { opacity: 1; }
+}
+
+@media (max-width: 400px) {
+  .plant-stage {
+    justify-content: center;
+  }
+  .gatto-character-slot,
+  .plant-container {
+    flex: 0 0 45%;
+    min-width: 120px;
+  }
+  .gatto-character__img {
+    max-height: 160px;
+  }
+  .container {
+    padding: 1.5rem 1.5rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
 }
